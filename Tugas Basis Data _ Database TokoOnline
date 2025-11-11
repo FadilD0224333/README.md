@@ -1,0 +1,120 @@
+Repository ini berisi tentang Tugas Basis Data:
+1. Pembuatan Database
+2. Membuat Minimal 3 Tabel
+3. Mengisi Data Di setiap Tabel(Insert)
+4. Menggunakan Query where dan between Untuk Menampilkan Isis Tabel
+__________________________________________________________________________________
+
+1. Nama Database saya: TokoOnline
+__________________________________________________________________________________
+2. Pembuatan Tabel (Users) Berisi dengan Format:
+
+CREATE TABLE Users (user_id INT AUTO_INCREMENT PRIMARY KEY,
+    ->     name VARCHAR(100) NOT NULL,
+    ->     email VARCHAR(100) UNIQUE NOT NULL,
+    ->     phone VARCHAR(15),
+    ->     address TEXT,
+    ->     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    -> );
+Tabel (Products):
+
+CREATE TABLE Products (product_id INT AUTO_INCREMENT PRIMARY KEY,
+    ->     name VARCHAR(100) NOT NULL,
+    ->     description TEXT,
+    ->     price DECIMAL(10, 2) NOT NULL,
+    ->     category VARCHAR(50),
+    ->     stock INT DEFAULT 0
+    -> );
+
+Tabel (Orders):
+
+CREATE TABLE Orders (order_id INT AUTO_INCREMENT PRIMARY KEY,
+    ->     user_id INT NOT NULL,
+    ->     product_id INT NOT NULL,
+    ->     quantity INT NOT NULL,
+    ->     order_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    ->     status VARCHAR(20) DEFAULT 'Pending',
+    ->     FOREIGN KEY (user_id) REFERENCES Users(user_id),
+    ->     FOREIGN KEY (product_id) REFERENCES Products(product_id)
+    -> );
+
+Pengisian Data Pada Tabel(Insert):
+
+
+-- Insert data ke tabel Users
+INSERT INTO Users (name, email, phone, address) VALUES
+('Alice Johnson', 'alice@example.com', '081234567890', 'Jl. Sudirman No.1'),
+('Bob Smith', 'bob@example.com', '081234567891', 'Jl. Thamrin No.2'),
+('Charlie Brown', 'charlie@example.com', '081234567892', 'Jl. Gatot Subroto No.3'),
+('Diana Prince', 'diana@example.com', '081234567893', 'Jl. Malioboro No.4'),
+('Eve Adams', 'eve@example.com', '081234567894', 'Jl. Malioboro No.5'),
+('Frank Miller', 'frank@example.com', '081234567895', 'Jl. Malioboro No.6'),
+('Grace Lee', 'grace@example.com', '081234567896', 'Jl. Malioboro No.7'),
+('Henry Ford', 'henry@example.com', '081234567897', 'Jl. Malioboro No.8'),
+('Ivy Chen', 'ivy@example.com', '081234567898', 'Jl. Malioboro No.9'),
+('Jack Ryan', 'jack@example.com', '081234567899', 'Jl. Malioboro No.10'),
+('Kate Winslet', 'kate@example.com', '081234567800', 'Jl. Malioboro No.11'),
+('Liam Neeson', 'liam@example.com', '081234567801', 'Jl. Malioboro No.12'),
+('Mia Khalifa', 'mia@example.com', '081234567802', 'Jl. Malioboro No.13'),
+('Noah Centineo', 'noah@example.com', '081234567803', 'Jl. Malioboro No.14'),
+('Olivia Rodrigo', 'olivia@example.com', '081234567804', 'Jl. Malioboro No.15');
+
+-- Insert data ke tabel Products
+INSERT INTO Products (name, description, price, category, stock) VALUES
+('Laptop Dell', 'Laptop gaming dengan spesifikasi tinggi', 15000000.00, 'Elektronik', 10),
+('Smartphone Samsung', 'Smartphone Android terbaru', 5000000.00, 'Elektronik', 20),
+('Buku Novel', 'Novel fiksi populer', 50000.00, 'Buku', 50),
+('Sepatu Nike', 'Sepatu olahraga untuk lari', 750000.00, 'Fashion', 15),
+('Kopi Arabica', 'Kopi biji asli dari Indonesia', 100000.00, 'Makanan', 30),
+('TV LED 32 Inch', 'Televisi LED untuk rumah', 3000000.00, 'Elektronik', 5),
+('Tas Kulit', 'Tas kulit asli untuk kerja', 200000.00, 'Fashion', 25),
+('Mouse Wireless', 'Mouse nirkabel ergonomis', 150000.00, 'Elektronik', 40),
+('Baju Kaos', 'Kaos katun nyaman', 75000.00, 'Fashion', 60),
+('Headphone Sony', 'Headphone wireless dengan bass kuat', 500000.00, 'Elektronik', 12),
+('Coklat Batang', 'Coklat premium dari Belgia', 25000.00, 'Makanan', 100),
+('Jam Tangan', 'Jam tangan analog klasik', 300000.00, 'Fashion', 8),
+('Printer Epson', 'Printer inkjet untuk kantor', 800000.00, 'Elektronik', 7),
+('Susu Kotak', 'Susu sapi segar', 15000.00, 'Makanan', 200),
+('Kursi Kantor', 'Kursi ergonomis untuk kerja', 1200000.00, 'Furniture', 3);
+
+-- Insert data ke tabel Orders
+INSERT INTO Orders (user_id, product_id, quantity, status) VALUES
+(1, 1, 1, 'Completed'),
+(2, 2, 2, 'Pending'),
+(3, 3, 1, 'Completed'),
+(4, 4, 1, 'Shipped'),
+(5, 5, 3, 'Pending'),
+(6, 6, 1, 'Completed'),
+(7, 7, 2, 'Shipped'),
+(8, 8, 1, 'Pending'),
+(9, 9, 4, 'Completed'),
+(10, 10, 1, 'Shipped'),
+(11, 11, 5, 'Pending'),
+(12, 12, 1, 'Completed'),
+(13, 13, 1, 'Shipped'),
+(14, 14, 10, 'Pending'),
+(15, 15, 1, 'Completed');
+
+Penggunaan Query (where) dan (between):
+
+
+-- Query 1: Pilih produk dengan harga antara 100.000 hingga 1.000.000 (menggunakan BETWEEN dan WHERE)
+SELECT product_id, name, price, category 
+FROM Products 
+WHERE price BETWEEN 100000 AND 1000000 
+ORDER BY price;
+
+-- Query 2: Pilih pengguna yang dibuat antara tanggal tertentu (misalnya, asumsikan created_at dalam range, tapi karena data dummy, saya gunakan contoh umum)
+-- Karena created_at adalah TIMESTAMP DEFAULT CURRENT_TIMESTAMP, semua data akan punya tanggal saat insert.
+-- Untuk demo, asumsikan range tanggal: SELECT users yang created_at BETWEEN '2023-01-01' AND '2024-12-31'
+SELECT user_id, name, email, created_at 
+FROM Users 
+WHERE created_at BETWEEN '2023-01-01 00:00:00' AND '2024-12-31 23:59:59';
+
+-- Query 3: Pilih pesanan dengan quantity antara 1 hingga 3, dan status 'Completed' (menggabungkan WHERE dengan BETWEEN)
+SELECT order_id, user_id, product_id, quantity, status 
+FROM Orders 
+WHERE quantity BETWEEN 1 AND 3 
+AND status = 'Completed';
+
+
