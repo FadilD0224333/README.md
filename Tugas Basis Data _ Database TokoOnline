@@ -181,18 +181,38 @@ SELECT product_id, name, price, category
 FROM Products 
 WHERE price BETWEEN 100000 AND 1000000 
 ORDER BY price;
++------------+----------------+-----------+------------+
+| product_id | name           | price     | category   |
++------------+----------------+-----------+------------+
+|          5 | Kopi Arabica   | 100000.00 | Makanan    |
+|         20 | Kopi Arabica   | 100000.00 | Makanan    |
+|         23 | Mouse Wireless | 150000.00 | Elektronik |
+|          8 | Mouse Wireless | 150000.00 | Elektronik |
+|          7 | Tas Kulit      | 200000.00 | Fashion    |
+|         22 | Tas Kulit      | 200000.00 | Fashion    |
+|         27 | Jam Tangan     | 300000.00 | Fashion    |
+|         12 | Jam Tangan     | 300000.00 | Fashion    |
+|         25 | Headphone Sony | 500000.00 | Elektronik |
+|         10 | Headphone Sony | 500000.00 | Elektronik |
+|          4 | Sepatu Nike    | 750000.00 | Fashion    |
+|         19 | Sepatu Nike    | 750000.00 | Fashion    |
+|         13 | Printer Epson  | 800000.00 | Elektronik |
+|         28 | Printer Epson  | 800000.00 | Elektronik |
++------------+----------------+-----------+------------+
 
--- Query 2: Pilih pengguna yang dibuat antara tanggal tertentu (misalnya, asumsikan created_at dalam range, tapi karena data dummy, saya gunakan contoh umum)
--- Karena created_at adalah TIMESTAMP DEFAULT CURRENT_TIMESTAMP, semua data akan punya tanggal saat insert.
--- Untuk demo, asumsikan range tanggal: SELECT users yang created_at BETWEEN '2023-01-01' AND '2024-12-31'
-SELECT user_id, name, email, created_at 
-FROM Users 
-WHERE created_at BETWEEN '2023-01-01 00:00:00' AND '2024-12-31 23:59:59';
 
--- Query 3: Pilih pesanan dengan quantity antara 1 hingga 3, dan status 'Completed' (menggabungkan WHERE dengan BETWEEN)
+-- Query 2: Pilih pesanan dengan quantity antara 1 hingga 3, dan status 'Completed' (menggabungkan WHERE dengan BETWEEN)
 SELECT order_id, user_id, product_id, quantity, status 
 FROM Orders 
 WHERE quantity BETWEEN 1 AND 3 
 AND status = 'Completed';
-
++----------+---------+------------+----------+-----------+
+| order_id | user_id | product_id | quantity | status    |
++----------+---------+------------+----------+-----------+
+|        1 |       1 |          1 |        1 | Completed |
+|        3 |       3 |          3 |        1 | Completed |
+|        6 |       6 |          6 |        1 | Completed |
+|       12 |      12 |         12 |        1 | Completed |
+|       15 |      15 |         15 |        1 | Completed |
++----------+---------+------------+----------+-----------+
 
