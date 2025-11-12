@@ -1,5 +1,4 @@
-# Nama Proyek  
-Deskripsi singkat tentang apa yang dilakukan proyek ini.
+# Nama Fadil
 
 ## Daftar Isi  
 -Tugas Basis Data
@@ -8,10 +7,7 @@ Deskripsi singkat tentang apa yang dilakukan proyek ini.
 Langkah-langkah bagaimana menjalankan proyek ini.
 
 ## Penggunaan  
-Contoh kode, screenshot, atau alur yang jelas.
+Contoh kode
 
 ## Kontribusi  
 Bagaimana orang lain bisa membantu/provide kontribusi.
-
-## Lisensi  
-Tipe lisensi (MIT, GPL, dll) atau link ke file LICENSE.
