@@ -59,6 +59,27 @@ INSERT INTO Users (name, email, phone, address) VALUES
 ('Noah Centineo', 'noah@example.com', '081234567803', 'Jl. Malioboro No.14'),
 ('Olivia Rodrigo', 'olivia@example.com', '081234567804', 'Jl. Malioboro No.15');
 
+ select * from users;
++---------+----------------+---------------------+--------------+------------------------+---------------------+
+| user_id | name           | email               | phone        | address                | created_at          |
++---------+----------------+---------------------+--------------+------------------------+---------------------+
+|       1 | Alice Johnson  | alice@example.com   | 081234567890 | Jl. Sudirman No.1      | 2025-11-12 12:26:46 |
+|       2 | Bob Smith      | bob@example.com     | 081234567891 | Jl. Thamrin No.2       | 2025-11-12 12:26:46 |
+|       3 | Charlie Brown  | charlie@example.com | 081234567892 | Jl. Gatot Subroto No.3 | 2025-11-12 12:26:46 |
+|       4 | Diana Prince   | diana@example.com   | 081234567893 | Jl. Malioboro No.4     | 2025-11-12 12:26:46 |
+|       5 | Eve Adams      | eve@example.com     | 081234567894 | Jl. Malioboro No.5     | 2025-11-12 12:26:46 |
+|       6 | Frank Miller   | frank@example.com   | 081234567895 | Jl. Malioboro No.6     | 2025-11-12 12:26:46 |
+|       7 | Grace Lee      | grace@example.com   | 081234567896 | Jl. Malioboro No.7     | 2025-11-12 12:26:46 |
+|       8 | Henry Ford     | henry@example.com   | 081234567897 | Jl. Malioboro No.8     | 2025-11-12 12:26:46 |
+|       9 | Ivy Chen       | ivy@example.com     | 081234567898 | Jl. Malioboro No.9     | 2025-11-12 12:26:46 |
+|      10 | Jack Ryan      | jack@example.com    | 081234567899 | Jl. Malioboro No.10    | 2025-11-12 12:26:46 |
+|      11 | Kate Winslet   | kate@example.com    | 081234567800 | Jl. Malioboro No.11    | 2025-11-12 12:26:46 |
+|      12 | Liam Neeson    | liam@example.com    | 081234567801 | Jl. Malioboro No.12    | 2025-11-12 12:26:46 |
+|      13 | Mia Khalifa    | mia@example.com     | 081234567802 | Jl. Malioboro No.13    | 2025-11-12 12:26:46 |
+|      14 | Noah Centineo  | noah@example.com    | 081234567803 | Jl. Malioboro No.14    | 2025-11-12 12:26:46 |
+|      15 | Olivia Rodrigo | olivia@example.com  | 081234567804 | Jl. Malioboro No.15    | 2025-11-12 12:26:46 |
++---------+----------------+---------------------+--------------+------------------------+---------------------+
+
 -- Insert data ke tabel Products
 INSERT INTO Products (name, description, price, category, stock) VALUES
 ('Laptop Dell', 'Laptop gaming dengan spesifikasi tinggi', 15000000.00, 'Elektronik', 10),
@@ -77,6 +98,42 @@ INSERT INTO Products (name, description, price, category, stock) VALUES
 ('Susu Kotak', 'Susu sapi segar', 15000.00, 'Makanan', 200),
 ('Kursi Kantor', 'Kursi ergonomis untuk kerja', 1200000.00, 'Furniture', 3);
 
+ select * from products;
++------------+--------------------+-----------------------------------------+-------------+------------+-------+
+| product_id | name               | description                             | price       | category   | stock |
++------------+--------------------+-----------------------------------------+-------------+------------+-------+
+|          1 | Laptop Dell        | Laptop gaming dengan spesifikasi tinggi | 15000000.00 | Elektronik |    10 |
+|          2 | Smartphone Samsung | Smartphone Android terbaru              |  5000000.00 | Elektronik |    20 |
+|          3 | Buku Novel         | Novel fiksi populer                     |    50000.00 | Buku       |    50 |
+|          4 | Sepatu Nike        | Sepatu olahraga untuk lari              |   750000.00 | Fashion    |    15 |
+|          5 | Kopi Arabica       | Kopi biji asli dari Indonesia           |   100000.00 | Makanan    |    30 |
+|          6 | TV LED 32 Inch     | Televisi LED untuk rumah                |  3000000.00 | Elektronik |     5 |
+|          7 | Tas Kulit          | Tas kulit asli untuk kerja              |   200000.00 | Fashion    |    25 |
+|          8 | Mouse Wireless     | Mouse nirkabel ergonomis                |   150000.00 | Elektronik |    40 |
+|          9 | Baju Kaos          | Kaos katun nyaman                       |    75000.00 | Fashion    |    60 |
+|         10 | Headphone Sony     | Headphone wireless dengan bass kuat     |   500000.00 | Elektronik |    12 |
+|         11 | Coklat Batang      | Coklat premium dari Belgia              |    25000.00 | Makanan    |   100 |
+|         12 | Jam Tangan         | Jam tangan analog klasik                |   300000.00 | Fashion    |     8 |
+|         13 | Printer Epson      | Printer inkjet untuk kantor             |   800000.00 | Elektronik |     7 |
+|         14 | Susu Kotak         | Susu sapi segar                         |    15000.00 | Makanan    |   200 |
+|         15 | Kursi Kantor       | Kursi ergonomis untuk kerja             |  1200000.00 | Furniture  |     3 |
+|         16 | Laptop Dell        | Laptop gaming dengan spesifikasi tinggi | 15000000.00 | Elektronik |    10 |
+|         17 | Smartphone Samsung | Smartphone Android terbaru              |  5000000.00 | Elektronik |    20 |
+|         18 | Buku Novel         | Novel fiksi populer                     |    50000.00 | Buku       |    50 |
+|         19 | Sepatu Nike        | Sepatu olahraga untuk lari              |   750000.00 | Fashion    |    15 |
+|         20 | Kopi Arabica       | Kopi biji asli dari Indonesia           |   100000.00 | Makanan    |    30 |
+|         21 | TV LED 32 Inch     | Televisi LED untuk rumah                |  3000000.00 | Elektronik |     5 |
+|         22 | Tas Kulit          | Tas kulit asli untuk kerja              |   200000.00 | Fashion    |    25 |
+|         23 | Mouse Wireless     | Mouse nirkabel ergonomis                |   150000.00 | Elektronik |    40 |
+|         24 | Baju Kaos          | Kaos katun nyaman                       |    75000.00 | Fashion    |    60 |
+|         25 | Headphone Sony     | Headphone wireless dengan bass kuat     |   500000.00 | Elektronik |    12 |
+|         26 | Coklat Batang      | Coklat premium dari Belgia              |    25000.00 | Makanan    |   100 |
+|         27 | Jam Tangan         | Jam tangan analog klasik                |   300000.00 | Fashion    |     8 |
+|         28 | Printer Epson      | Printer inkjet untuk kantor             |   800000.00 | Elektronik |     7 |
+|         29 | Susu Kotak         | Susu sapi segar                         |    15000.00 | Makanan    |   200 |
+|         30 | Kursi Kantor       | Kursi ergonomis untuk kerja             |  1200000.00 | Furniture  |     3 |
++------------+--------------------+-----------------------------------------+-------------+------------+-------+
+
 -- Insert data ke tabel Orders
 INSERT INTO Orders (user_id, product_id, quantity, status) VALUES
 (1, 1, 1, 'Completed'),
@@ -94,6 +151,27 @@ INSERT INTO Orders (user_id, product_id, quantity, status) VALUES
 (13, 13, 1, 'Shipped'),
 (14, 14, 10, 'Pending'),
 (15, 15, 1, 'Completed');
+
+select * from orders;
++----------+---------+------------+----------+---------------------+-----------+
+| order_id | user_id | product_id | quantity | order_date          | status    |
++----------+---------+------------+----------+---------------------+-----------+
+|        1 |       1 |          1 |        1 | 2025-11-12 12:27:25 | Completed |
+|        2 |       2 |          2 |        2 | 2025-11-12 12:27:25 | Pending   |
+|        3 |       3 |          3 |        1 | 2025-11-12 12:27:25 | Completed |
+|        4 |       4 |          4 |        1 | 2025-11-12 12:27:25 | Shipped   |
+|        5 |       5 |          5 |        3 | 2025-11-12 12:27:25 | Pending   |
+|        6 |       6 |          6 |        1 | 2025-11-12 12:27:25 | Completed |
+|        7 |       7 |          7 |        2 | 2025-11-12 12:27:25 | Shipped   |
+|        8 |       8 |          8 |        1 | 2025-11-12 12:27:25 | Pending   |
+|        9 |       9 |          9 |        4 | 2025-11-12 12:27:25 | Completed |
+|       10 |      10 |         10 |        1 | 2025-11-12 12:27:25 | Shipped   |
+|       11 |      11 |         11 |        5 | 2025-11-12 12:27:25 | Pending   |
+|       12 |      12 |         12 |        1 | 2025-11-12 12:27:25 | Completed |
+|       13 |      13 |         13 |        1 | 2025-11-12 12:27:25 | Shipped   |
+|       14 |      14 |         14 |       10 | 2025-11-12 12:27:25 | Pending   |
+|       15 |      15 |         15 |        1 | 2025-11-12 12:27:25 | Completed |
++----------+---------+------------+----------+---------------------+-----------+
 
 Penggunaan Query (where) dan (between):
 
