@@ -175,33 +175,7 @@ select * from orders;
 
 Penggunaan Query (where) dan (between):
 
-
--- Query 1: Pilih produk dengan harga antara 100.000 hingga 1.000.000 (menggunakan BETWEEN dan WHERE)
-SELECT product_id, name, price, category 
-FROM Products 
-WHERE price BETWEEN 100000 AND 1000000 
-ORDER BY price;
-+------------+----------------+-----------+------------+
-| product_id | name           | price     | category   |
-+------------+----------------+-----------+------------+
-|          5 | Kopi Arabica   | 100000.00 | Makanan    |
-|         20 | Kopi Arabica   | 100000.00 | Makanan    |
-|         23 | Mouse Wireless | 150000.00 | Elektronik |
-|          8 | Mouse Wireless | 150000.00 | Elektronik |
-|          7 | Tas Kulit      | 200000.00 | Fashion    |
-|         22 | Tas Kulit      | 200000.00 | Fashion    |
-|         27 | Jam Tangan     | 300000.00 | Fashion    |
-|         12 | Jam Tangan     | 300000.00 | Fashion    |
-|         25 | Headphone Sony | 500000.00 | Elektronik |
-|         10 | Headphone Sony | 500000.00 | Elektronik |
-|          4 | Sepatu Nike    | 750000.00 | Fashion    |
-|         19 | Sepatu Nike    | 750000.00 | Fashion    |
-|         13 | Printer Epson  | 800000.00 | Elektronik |
-|         28 | Printer Epson  | 800000.00 | Elektronik |
-+------------+----------------+-----------+------------+
-
-
--- Query 2: Pilih pesanan dengan quantity antara 1 hingga 3, dan status 'Completed' (menggabungkan WHERE dengan BETWEEN)
+-- Query 1: Pilih pesanan dengan quantity antara 1 hingga 3, dan status 'Completed'
 SELECT order_id, user_id, product_id, quantity, status 
 FROM Orders 
 WHERE quantity BETWEEN 1 AND 3 
