@@ -43,143 +43,247 @@ Pengisian Data Pada Tabel(Insert):
 
 -- Insert data ke tabel Users
 INSERT INTO Users (name, email, phone, address) VALUES
-('Alice Johnson', 'alice@example.com', '081234567890', 'Jl. Sudirman No.1'),
-('Bob Smith', 'bob@example.com', '081234567891', 'Jl. Thamrin No.2'),
-('Charlie Brown', 'charlie@example.com', '081234567892', 'Jl. Gatot Subroto No.3'),
-('Diana Prince', 'diana@example.com', '081234567893', 'Jl. Malioboro No.4'),
-('Eve Adams', 'eve@example.com', '081234567894', 'Jl. Malioboro No.5'),
-('Frank Miller', 'frank@example.com', '081234567895', 'Jl. Malioboro No.6'),
-('Grace Lee', 'grace@example.com', '081234567896', 'Jl. Malioboro No.7'),
-('Henry Ford', 'henry@example.com', '081234567897', 'Jl. Malioboro No.8'),
-('Ivy Chen', 'ivy@example.com', '081234567898', 'Jl. Malioboro No.9'),
-('Jack Ryan', 'jack@example.com', '081234567899', 'Jl. Malioboro No.10'),
-('Kate Winslet', 'kate@example.com', '081234567800', 'Jl. Malioboro No.11'),
-('Liam Neeson', 'liam@example.com', '081234567801', 'Jl. Malioboro No.12'),
-('Mia Khalifa', 'mia@example.com', '081234567802', 'Jl. Malioboro No.13'),
-('Noah Centineo', 'noah@example.com', '081234567803', 'Jl. Malioboro No.14'),
-('Olivia Rodrigo', 'olivia@example.com', '081234567804', 'Jl. Malioboro No.15');
+('Alice Johnson','alice@example.com','081234567890','Jl. Sudirman No.1'),
+('Bob Smith','bob@example.com','081234567891','Jl. Thamrin No.2'),
+('Charlie Brown','charlie@example.com','081234567892','Jl. Gatot Subroto No.3'),
+('Diana Prince','diana@example.com','081234567893','Jl. Malioboro No.4'),
+('Eve Adams','eve@example.com','081234567894','Jl. Merdeka No.5'),
+('Frank Miller','frank@example.com','081234567895','Jl. Veteran No.6'),
+('Grace Lee','grace@example.com','081234567896','Jl. Asia Afrika No.7'),
+('Henry Ford','henry@example.com','081234567897','Jl. Kopo No.8'),
+('Ivy Chen','ivy@example.com','081234567898','Jl. Rajawali No.9'),
+('Jack Ryan','jack@example.com','081234567899','Jl. Melati No.10'),
+('Kate Winslet','kate@example.com','081234567800','Jl. Mawar No.11'),
+('Liam Neeson','liam@example.com','081234567801','Jl. Kenanga No.12'),
+('Mia Khalifa','mia@example.com','081234567802','Jl. Cendana No.13'),
+('Noah Centineo','noah@example.com','081234567803','Jl. Cemara No.14'),
+('Olivia Rodrigo','olivia@example.com','081234567804','Jl. Flamboyan No.15'),
+('Peter Parker','peter@example.com','081234567805','Jl. Anggrek No.16'),
+('Quinn Taylor','quinn@example.com','081234567806','Jl. Dahlia No.17'),
+('Rachel Green','rachel@example.com','081234567807','Jl. Sakura No.18'),
+('Steve Rogers','steve@example.com','081234567808','Jl. Nusa Indah No.19'),
+('Tony Stark','tony@example.com','081234567809','Jl. Surya Kencana No.20'),
+('Ursula Hart','ursula@example.com','081234567810','Jl. Merpati No.21'),
+('Victor Stone','victor@example.com','081234567811','Jl. Elang No.22'),
+('Wendy Wu','wendy@example.com','081234567812','Jl. Cempaka No.23'),
+('Xavier Lane','xavier@example.com','081234567813','Jl. Teratai No.24'),
+('Yuki Matsumoto','yuki@example.com','081234567814','Jl. Pinus No.25'),
+('Zara Ali','zara@example.com','081234567815','Jl. Randu No.26'),
+('Andi Saputra','andi@example.com','081234567816','Jl. Sawo No.27'),
+('Budi Santoso','budi@example.com','081234567817','Jl. Angsana No.28'),
+('Citra Dewi','citra@example.com','081234567818','Jl. Rambutan No.29'),
+('Doni Pratama','doni@example.com','081234567819','Jl. Jati No.30'),
+('Elisa Marbun','elisa@example.com','081234567820','Jl. Beringin No.31'),
+('Farhan Akbar','farhan@example.com','081234567821','Jl. Kelapa No.32'),
+('Gina Lestari','gina@example.com','081234567822','Jl. Duren No.33'),
+('Hadi Kurnia','hadi@example.com','081234567823','Jl. Pepaya No.34'),
+('Indah Permata','indah@example.com','081234567824','Jl. Palem No.35');
 
- select * from users;
-+---------+----------------+---------------------+--------------+------------------------+---------------------+
-| user_id | name           | email               | phone        | address                | created_at          |
-+---------+----------------+---------------------+--------------+------------------------+---------------------+
-|       1 | Alice Johnson  | alice@example.com   | 081234567890 | Jl. Sudirman No.1      | 2025-11-12 12:26:46 |
-|       2 | Bob Smith      | bob@example.com     | 081234567891 | Jl. Thamrin No.2       | 2025-11-12 12:26:46 |
-|       3 | Charlie Brown  | charlie@example.com | 081234567892 | Jl. Gatot Subroto No.3 | 2025-11-12 12:26:46 |
-|       4 | Diana Prince   | diana@example.com   | 081234567893 | Jl. Malioboro No.4     | 2025-11-12 12:26:46 |
-|       5 | Eve Adams      | eve@example.com     | 081234567894 | Jl. Malioboro No.5     | 2025-11-12 12:26:46 |
-|       6 | Frank Miller   | frank@example.com   | 081234567895 | Jl. Malioboro No.6     | 2025-11-12 12:26:46 |
-|       7 | Grace Lee      | grace@example.com   | 081234567896 | Jl. Malioboro No.7     | 2025-11-12 12:26:46 |
-|       8 | Henry Ford     | henry@example.com   | 081234567897 | Jl. Malioboro No.8     | 2025-11-12 12:26:46 |
-|       9 | Ivy Chen       | ivy@example.com     | 081234567898 | Jl. Malioboro No.9     | 2025-11-12 12:26:46 |
-|      10 | Jack Ryan      | jack@example.com    | 081234567899 | Jl. Malioboro No.10    | 2025-11-12 12:26:46 |
-|      11 | Kate Winslet   | kate@example.com    | 081234567800 | Jl. Malioboro No.11    | 2025-11-12 12:26:46 |
-|      12 | Liam Neeson    | liam@example.com    | 081234567801 | Jl. Malioboro No.12    | 2025-11-12 12:26:46 |
-|      13 | Mia Khalifa    | mia@example.com     | 081234567802 | Jl. Malioboro No.13    | 2025-11-12 12:26:46 |
-|      14 | Noah Centineo  | noah@example.com    | 081234567803 | Jl. Malioboro No.14    | 2025-11-12 12:26:46 |
-|      15 | Olivia Rodrigo | olivia@example.com  | 081234567804 | Jl. Malioboro No.15    | 2025-11-12 12:26:46 |
-+---------+----------------+---------------------+--------------+------------------------+---------------------+
+select * from users;
++---------+----------------+---------------------+--------------+-------------------------+---------------------+
+| user_id | name           | email               | phone        | address                 | created_at          |
++---------+----------------+---------------------+--------------+-------------------------+---------------------+
+|       1 | Alice Johnson  | alice@example.com   | 081234567890 | Jl. Sudirman No.1       | 2025-11-30 03:29:05 |
+|       2 | Bob Smith      | bob@example.com     | 081234567891 | Jl. Thamrin No.2        | 2025-11-30 03:29:05 |
+|       3 | Charlie Brown  | charlie@example.com | 081234567892 | Jl. Gatot Subroto No.3  | 2025-11-30 03:29:05 |
+|       4 | Diana Prince   | diana@example.com   | 081234567893 | Jl. Malioboro No.4      | 2025-11-30 03:29:05 |
+|       5 | Eve Adams      | eve@example.com     | 081234567894 | Jl. Merdeka No.5        | 2025-11-30 03:29:05 |
+|       6 | Frank Miller   | frank@example.com   | 081234567895 | Jl. Veteran No.6        | 2025-11-30 03:29:05 |
+|       7 | Grace Lee      | grace@example.com   | 081234567896 | Jl. Asia Afrika No.7    | 2025-11-30 03:29:05 |
+|       8 | Henry Ford     | henry@example.com   | 081234567897 | Jl. Kopo No.8           | 2025-11-30 03:29:05 |
+|       9 | Ivy Chen       | ivy@example.com     | 081234567898 | Jl. Rajawali No.9       | 2025-11-30 03:29:05 |
+|      10 | Jack Ryan      | jack@example.com    | 081234567899 | Jl. Melati No.10        | 2025-11-30 03:29:05 |
+|      11 | Kate Winslet   | kate@example.com    | 081234567800 | Jl. Mawar No.11         | 2025-11-30 03:29:05 |
+|      12 | Liam Neeson    | liam@example.com    | 081234567801 | Jl. Kenanga No.12       | 2025-11-30 03:29:05 |
+|      13 | Mia Khalifa    | mia@example.com     | 081234567802 | Jl. Cendana No.13       | 2025-11-30 03:29:05 |
+|      14 | Noah Centineo  | noah@example.com    | 081234567803 | Jl. Cemara No.14        | 2025-11-30 03:29:05 |
+|      15 | Olivia Rodrigo | olivia@example.com  | 081234567804 | Jl. Flamboyan No.15     | 2025-11-30 03:29:05 |
+|      16 | Peter Parker   | peter@example.com   | 081234567805 | Jl. Anggrek No.16       | 2025-11-30 03:29:05 |
+|      17 | Quinn Taylor   | quinn@example.com   | 081234567806 | Jl. Dahlia No.17        | 2025-11-30 03:29:05 |
+|      18 | Rachel Green   | rachel@example.com  | 081234567807 | Jl. Sakura No.18        | 2025-11-30 03:29:05 |
+|      19 | Steve Rogers   | steve@example.com   | 081234567808 | Jl. Nusa Indah No.19    | 2025-11-30 03:29:05 |
+|      20 | Tony Stark     | tony@example.com    | 081234567809 | Jl. Surya Kencana No.20 | 2025-11-30 03:29:05 |
+|      21 | Ursula Hart    | ursula@example.com  | 081234567810 | Jl. Merpati No.21       | 2025-11-30 03:29:05 |
+|      22 | Victor Stone   | victor@example.com  | 081234567811 | Jl. Elang No.22         | 2025-11-30 03:29:05 |
+|      23 | Wendy Wu       | wendy@example.com   | 081234567812 | Jl. Cempaka No.23       | 2025-11-30 03:29:05 |
+|      24 | Xavier Lane    | xavier@example.com  | 081234567813 | Jl. Teratai No.24       | 2025-11-30 03:29:05 |
+|      25 | Yuki Matsumoto | yuki@example.com    | 081234567814 | Jl. Pinus No.25         | 2025-11-30 03:29:05 |
+|      26 | Zara Ali       | zara@example.com    | 081234567815 | Jl. Randu No.26         | 2025-11-30 03:29:05 |
+|      27 | Andi Saputra   | andi@example.com    | 081234567816 | Jl. Sawo No.27          | 2025-11-30 03:29:05 |
+|      28 | Budi Santoso   | budi@example.com    | 081234567817 | Jl. Angsana No.28       | 2025-11-30 03:29:05 |
+|      29 | Citra Dewi     | citra@example.com   | 081234567818 | Jl. Rambutan No.29      | 2025-11-30 03:29:05 |
+|      30 | Doni Pratama   | doni@example.com    | 081234567819 | Jl. Jati No.30          | 2025-11-30 03:29:05 |
+|      31 | Elisa Marbun   | elisa@example.com   | 081234567820 | Jl. Beringin No.31      | 2025-11-30 03:29:05 |
+|      32 | Farhan Akbar   | farhan@example.com  | 081234567821 | Jl. Kelapa No.32        | 2025-11-30 03:29:05 |
+|      33 | Gina Lestari   | gina@example.com    | 081234567822 | Jl. Duren No.33         | 2025-11-30 03:29:05 |
+|      34 | Hadi Kurnia    | hadi@example.com    | 081234567823 | Jl. Pepaya No.34        | 2025-11-30 03:29:05 |
+|      35 | Indah Permata  | indah@example.com   | 081234567824 | Jl. Palem No.35         | 2025-11-30 03:29:05 |
++---------+----------------+---------------------+--------------+-------------------------+---------------------+
 
 -- Insert data ke tabel Products
 INSERT INTO Products (name, description, price, category, stock) VALUES
-('Laptop Dell', 'Laptop gaming dengan spesifikasi tinggi', 15000000.00, 'Elektronik', 10),
-('Smartphone Samsung', 'Smartphone Android terbaru', 5000000.00, 'Elektronik', 20),
-('Buku Novel', 'Novel fiksi populer', 50000.00, 'Buku', 50),
-('Sepatu Nike', 'Sepatu olahraga untuk lari', 750000.00, 'Fashion', 15),
-('Kopi Arabica', 'Kopi biji asli dari Indonesia', 100000.00, 'Makanan', 30),
-('TV LED 32 Inch', 'Televisi LED untuk rumah', 3000000.00, 'Elektronik', 5),
-('Tas Kulit', 'Tas kulit asli untuk kerja', 200000.00, 'Fashion', 25),
-('Mouse Wireless', 'Mouse nirkabel ergonomis', 150000.00, 'Elektronik', 40),
-('Baju Kaos', 'Kaos katun nyaman', 75000.00, 'Fashion', 60),
-('Headphone Sony', 'Headphone wireless dengan bass kuat', 500000.00, 'Elektronik', 12),
-('Coklat Batang', 'Coklat premium dari Belgia', 25000.00, 'Makanan', 100),
-('Jam Tangan', 'Jam tangan analog klasik', 300000.00, 'Fashion', 8),
-('Printer Epson', 'Printer inkjet untuk kantor', 800000.00, 'Elektronik', 7),
-('Susu Kotak', 'Susu sapi segar', 15000.00, 'Makanan', 200),
-('Kursi Kantor', 'Kursi ergonomis untuk kerja', 1200000.00, 'Furniture', 3);
+    -> ('Laptop Dell','Laptop gaming high-end',15000000,'Elektronik',10),
+    -> ('Smartphone Samsung','Smartphone Android terbaru',5000000,'Elektronik',20),
+    -> ('Buku Novel','Novel fiksi populer',50000,'Buku',50),
+    -> ('Sepatu Nike','Sepatu olahraga premium',750000,'Fashion',15),
+    -> ('Kopi Arabica','Kopi asli Indonesia',100000,'Makanan',30),
+    -> ('TV LED 32 Inch','TV LED terbaru',3000000,'Elektronik',5),
+    -> ('Tas Kulit','Tas kulit asli',200000,'Fashion',25),
+    -> ('Mouse Wireless','Mouse nirkabel ergonomis',150000,'Elektronik',40),
+    -> ('Baju Kaos','Kaos katun nyaman',75000,'Fashion',60),
+    -> ('Headphone Sony','Headphone bass kuat',500000,'Elektronik',12),
+    -> ('Coklat Premium','Coklat batang premium',25000,'Makanan',100),
+    -> ('Jam Tangan','Jam tangan analog',300000,'Fashion',8),
+    -> ('Printer Epson','Printer inkjet',800000,'Elektronik',7),
+    -> ('Susu Kotak','Susu sapi segar',15000,'Makanan',200),
+    -> ('Kursi Kantor','Kursi ergonomis',1200000,'Furniture',3),
+    -> ('Meja Belajar','Meja kayu minimalis',850000,'Furniture',4),
+    -> ('Lampu LED','Lampu hemat energi',30000,'Elektronik',150),
+    -> ('Keyboard Mechanical','Keyboard gaming',600000,'Elektronik',9),
+    -> ('Flashdisk 64GB','USB Flashdisk',90000,'Elektronik',80),
+    -> ('Air Mineral','Air mineral botol',6000,'Makanan',200),
+    -> ('Roti Susu','Roti manis lembut',12000,'Makanan',150),
+    -> ('Topi Adidas','Topi olahraga',120000,'Fashion',16),
+    -> ('Kacamata Hitam','Kacamata UV protection',95000,'Fashion',22),
+    -> ('Blender Philips','Blender dapur',450000,'Elektronik',6),
+    -> ('Panci Stainless','Panci anti karat',170000,'Dapur',14),
+    -> ('Gula Pasir','Gula murni',14000,'Makanan',250),
+    -> ('Beras Premium','Beras kualitas tinggi',70000,'Makanan',100),
+    -> ('Minyak Goreng','Minyak kelapa sawit',13000,'Makanan',300),
+    -> ('Helm Bogo','Helm motor retro',250000,'Aksesoris',18),
+    -> ('Sandal Jepit','Sandal karet awet',18000,'Fashion',70),
+    -> ('Celana Jeans','Jeans premium',250000,'Fashion',12),
+    -> ('Remote TV','Remote universal',25000,'Elektronik',50),
+    -> ('Lakban Hitam','Lakban kuat',10000,'Peralatan',90),
+    -> ('Pengharum Ruangan','Aromatherapy',20000,'Rumah',40),
+    -> ('Sikat Gigi','Sikat gigi halus',8000,'Kesehatan',120);
 
  select * from products;
-+------------+--------------------+-----------------------------------------+-------------+------------+-------+
-| product_id | name               | description                             | price       | category   | stock |
-+------------+--------------------+-----------------------------------------+-------------+------------+-------+
-|          1 | Laptop Dell        | Laptop gaming dengan spesifikasi tinggi | 15000000.00 | Elektronik |    10 |
-|          2 | Smartphone Samsung | Smartphone Android terbaru              |  5000000.00 | Elektronik |    20 |
-|          3 | Buku Novel         | Novel fiksi populer                     |    50000.00 | Buku       |    50 |
-|          4 | Sepatu Nike        | Sepatu olahraga untuk lari              |   750000.00 | Fashion    |    15 |
-|          5 | Kopi Arabica       | Kopi biji asli dari Indonesia           |   100000.00 | Makanan    |    30 |
-|          6 | TV LED 32 Inch     | Televisi LED untuk rumah                |  3000000.00 | Elektronik |     5 |
-|          7 | Tas Kulit          | Tas kulit asli untuk kerja              |   200000.00 | Fashion    |    25 |
-|          8 | Mouse Wireless     | Mouse nirkabel ergonomis                |   150000.00 | Elektronik |    40 |
-|          9 | Baju Kaos          | Kaos katun nyaman                       |    75000.00 | Fashion    |    60 |
-|         10 | Headphone Sony     | Headphone wireless dengan bass kuat     |   500000.00 | Elektronik |    12 |
-|         11 | Coklat Batang      | Coklat premium dari Belgia              |    25000.00 | Makanan    |   100 |
-|         12 | Jam Tangan         | Jam tangan analog klasik                |   300000.00 | Fashion    |     8 |
-|         13 | Printer Epson      | Printer inkjet untuk kantor             |   800000.00 | Elektronik |     7 |
-|         14 | Susu Kotak         | Susu sapi segar                         |    15000.00 | Makanan    |   200 |
-|         15 | Kursi Kantor       | Kursi ergonomis untuk kerja             |  1200000.00 | Furniture  |     3 |
-|         16 | Laptop Dell        | Laptop gaming dengan spesifikasi tinggi | 15000000.00 | Elektronik |    10 |
-|         17 | Smartphone Samsung | Smartphone Android terbaru              |  5000000.00 | Elektronik |    20 |
-|         18 | Buku Novel         | Novel fiksi populer                     |    50000.00 | Buku       |    50 |
-|         19 | Sepatu Nike        | Sepatu olahraga untuk lari              |   750000.00 | Fashion    |    15 |
-|         20 | Kopi Arabica       | Kopi biji asli dari Indonesia           |   100000.00 | Makanan    |    30 |
-|         21 | TV LED 32 Inch     | Televisi LED untuk rumah                |  3000000.00 | Elektronik |     5 |
-|         22 | Tas Kulit          | Tas kulit asli untuk kerja              |   200000.00 | Fashion    |    25 |
-|         23 | Mouse Wireless     | Mouse nirkabel ergonomis                |   150000.00 | Elektronik |    40 |
-|         24 | Baju Kaos          | Kaos katun nyaman                       |    75000.00 | Fashion    |    60 |
-|         25 | Headphone Sony     | Headphone wireless dengan bass kuat     |   500000.00 | Elektronik |    12 |
-|         26 | Coklat Batang      | Coklat premium dari Belgia              |    25000.00 | Makanan    |   100 |
-|         27 | Jam Tangan         | Jam tangan analog klasik                |   300000.00 | Fashion    |     8 |
-|         28 | Printer Epson      | Printer inkjet untuk kantor             |   800000.00 | Elektronik |     7 |
-|         29 | Susu Kotak         | Susu sapi segar                         |    15000.00 | Makanan    |   200 |
-|         30 | Kursi Kantor       | Kursi ergonomis untuk kerja             |  1200000.00 | Furniture  |     3 |
-+------------+--------------------+-----------------------------------------+-------------+------------+-------+
-
++------------+---------------------+----------------------------+-------------+------------+-------+
+| product_id | name                | description                | price       | category   | stock |
++------------+---------------------+----------------------------+-------------+------------+-------+
+|          1 | Laptop Dell         | Laptop gaming high-end     | 15000000.00 | Elektronik |    10 |
+|          2 | Smartphone Samsung  | Smartphone Android terbaru |  5000000.00 | Elektronik |    20 |
+|          3 | Buku Novel          | Novel fiksi populer        |    50000.00 | Buku       |    50 |
+|          4 | Sepatu Nike         | Sepatu olahraga premium    |   750000.00 | Fashion    |    15 |
+|          5 | Kopi Arabica        | Kopi asli Indonesia        |   100000.00 | Makanan    |    30 |
+|          6 | TV LED 32 Inch      | TV LED terbaru             |  3000000.00 | Elektronik |     5 |
+|          7 | Tas Kulit           | Tas kulit asli             |   200000.00 | Fashion    |    25 |
+|          8 | Mouse Wireless      | Mouse nirkabel ergonomis   |   150000.00 | Elektronik |    40 |
+|          9 | Baju Kaos           | Kaos katun nyaman          |    75000.00 | Fashion    |    60 |
+|         10 | Headphone Sony      | Headphone bass kuat        |   500000.00 | Elektronik |    12 |
+|         11 | Coklat Premium      | Coklat batang premium      |    25000.00 | Makanan    |   100 |
+|         12 | Jam Tangan          | Jam tangan analog          |   300000.00 | Fashion    |     8 |
+|         13 | Printer Epson       | Printer inkjet             |   800000.00 | Elektronik |     7 |
+|         14 | Susu Kotak          | Susu sapi segar            |    15000.00 | Makanan    |   200 |
+|         15 | Kursi Kantor        | Kursi ergonomis            |  1200000.00 | Furniture  |     3 |
+|         16 | Meja Belajar        | Meja kayu minimalis        |   850000.00 | Furniture  |     4 |
+|         17 | Lampu LED           | Lampu hemat energi         |    30000.00 | Elektronik |   150 |
+|         18 | Keyboard Mechanical | Keyboard gaming            |   600000.00 | Elektronik |     9 |
+|         19 | Flashdisk 64GB      | USB Flashdisk              |    90000.00 | Elektronik |    80 |
+|         20 | Air Mineral         | Air mineral botol          |     6000.00 | Makanan    |   200 |
+|         21 | Roti Susu           | Roti manis lembut          |    12000.00 | Makanan    |   150 |
+|         22 | Topi Adidas         | Topi olahraga              |   120000.00 | Fashion    |    16 |
+|         23 | Kacamata Hitam      | Kacamata UV protection     |    95000.00 | Fashion    |    22 |
+|         24 | Blender Philips     | Blender dapur              |   450000.00 | Elektronik |     6 |
+|         25 | Panci Stainless     | Panci anti karat           |   170000.00 | Dapur      |    14 |
+|         26 | Gula Pasir          | Gula murni                 |    14000.00 | Makanan    |   250 |
+|         27 | Beras Premium       | Beras kualitas tinggi      |    70000.00 | Makanan    |   100 |
+|         28 | Minyak Goreng       | Minyak kelapa sawit        |    13000.00 | Makanan    |   300 |
+|         29 | Helm Bogo           | Helm motor retro           |   250000.00 | Aksesoris  |    18 |
+|         30 | Sandal Jepit        | Sandal karet awet          |    18000.00 | Fashion    |    70 |
+|         31 | Celana Jeans        | Jeans premium              |   250000.00 | Fashion    |    12 |
+|         32 | Remote TV           | Remote universal           |    25000.00 | Elektronik |    50 |
+|         33 | Lakban Hitam        | Lakban kuat                |    10000.00 | Peralatan  |    90 |
+|         34 | Pengharum Ruangan   | Aromatherapy               |    20000.00 | Rumah      |    40 |
+|         35 | Sikat Gigi          | Sikat gigi halus           |     8000.00 | Kesehatan  |   120 |
++------------+---------------------+----------------------------+-------------+------------+-------+
 -- Insert data ke tabel Orders
-INSERT INTO Orders (user_id, product_id, quantity, status) VALUES
-(1, 1, 1, 'Completed'),
-(2, 2, 2, 'Pending'),
-(3, 3, 1, 'Completed'),
-(4, 4, 1, 'Shipped'),
-(5, 5, 3, 'Pending'),
-(6, 6, 1, 'Completed'),
-(7, 7, 2, 'Shipped'),
-(8, 8, 1, 'Pending'),
-(9, 9, 4, 'Completed'),
-(10, 10, 1, 'Shipped'),
-(11, 11, 5, 'Pending'),
-(12, 12, 1, 'Completed'),
-(13, 13, 1, 'Shipped'),
-(14, 14, 10, 'Pending'),
-(15, 15, 1, 'Completed');
+ INSERT INTO Orders (user_id, product_id, quantity, status) VALUES
+    -> (1,1,1,'Completed'),
+    -> (2,2,2,'Pending'),
+    -> (3,3,1,'Completed'),
+    -> (4,4,1,'Shipped'),
+    -> (5,5,3,'Pending'),
+    -> (6,6,1,'Completed'),
+    -> (7,7,2,'Shipped'),
+    -> (8,8,1,'Pending'),
+    -> (9,9,4,'Completed'),
+    -> (10,10,1,'Shipped'),
+    -> (11,11,5,'Pending'),
+    -> (12,12,1,'Completed'),
+    -> (13,13,1,'Shipped'),
+    -> (14,14,10,'Pending'),
+    -> (15,15,1,'Completed'),
+    -> (16,16,2,'Completed'),
+    -> (17,17,1,'Pending'),
+    -> (18,18,3,'Shipped'),
+    -> (19,19,2,'Completed'),
+    -> (20,20,4,'Pending'),
+    -> (21,21,1,'Completed'),
+    -> (22,22,3,'Shipped'),
+    -> (23,23,2,'Pending'),
+    -> (24,24,1,'Completed'),
+    -> (25,25,1,'Shipped'),
+    -> (26,26,5,'Completed'),
+    -> (27,27,3,'Pending'),
+    -> (28,28,2,'Completed'),
+    -> (29,29,10,'Completed'),
+    -> (30,30,1,'Shipped'),
+    -> (31,31,4,'Pending'),
+    -> (32,32,2,'Completed'),
+    -> (33,33,1,'Completed'),
+    -> (34,34,3,'Pending'),
+    -> (35,35,2,'Shipped');
 
 select * from orders;
 +----------+---------+------------+----------+---------------------+-----------+
 | order_id | user_id | product_id | quantity | order_date          | status    |
 +----------+---------+------------+----------+---------------------+-----------+
-|        1 |       1 |          1 |        1 | 2025-11-12 12:27:25 | Completed |
-|        2 |       2 |          2 |        2 | 2025-11-12 12:27:25 | Pending   |
-|        3 |       3 |          3 |        1 | 2025-11-12 12:27:25 | Completed |
-|        4 |       4 |          4 |        1 | 2025-11-12 12:27:25 | Shipped   |
-|        5 |       5 |          5 |        3 | 2025-11-12 12:27:25 | Pending   |
-|        6 |       6 |          6 |        1 | 2025-11-12 12:27:25 | Completed |
-|        7 |       7 |          7 |        2 | 2025-11-12 12:27:25 | Shipped   |
-|        8 |       8 |          8 |        1 | 2025-11-12 12:27:25 | Pending   |
-|        9 |       9 |          9 |        4 | 2025-11-12 12:27:25 | Completed |
-|       10 |      10 |         10 |        1 | 2025-11-12 12:27:25 | Shipped   |
-|       11 |      11 |         11 |        5 | 2025-11-12 12:27:25 | Pending   |
-|       12 |      12 |         12 |        1 | 2025-11-12 12:27:25 | Completed |
-|       13 |      13 |         13 |        1 | 2025-11-12 12:27:25 | Shipped   |
-|       14 |      14 |         14 |       10 | 2025-11-12 12:27:25 | Pending   |
-|       15 |      15 |         15 |        1 | 2025-11-12 12:27:25 | Completed |
+|        1 |       1 |          1 |        1 | 2025-11-30 03:33:49 | Completed |
+|        2 |       2 |          2 |        2 | 2025-11-30 03:33:49 | Pending   |
+|        3 |       3 |          3 |        1 | 2025-11-30 03:33:49 | Completed |
+|        4 |       4 |          4 |        1 | 2025-11-30 03:33:49 | Shipped   |
+|        5 |       5 |          5 |        3 | 2025-11-30 03:33:49 | Pending   |
+|        6 |       6 |          6 |        1 | 2025-11-30 03:33:49 | Completed |
+|        7 |       7 |          7 |        2 | 2025-11-30 03:33:49 | Shipped   |
+|        8 |       8 |          8 |        1 | 2025-11-30 03:33:49 | Pending   |
+|        9 |       9 |          9 |        4 | 2025-11-30 03:33:49 | Completed |
+|       10 |      10 |         10 |        1 | 2025-11-30 03:33:49 | Shipped   |
+|       11 |      11 |         11 |        5 | 2025-11-30 03:33:49 | Pending   |
+|       12 |      12 |         12 |        1 | 2025-11-30 03:33:49 | Completed |
+|       13 |      13 |         13 |        1 | 2025-11-30 03:33:49 | Shipped   |
+|       14 |      14 |         14 |       10 | 2025-11-30 03:33:49 | Pending   |
+|       15 |      15 |         15 |        1 | 2025-11-30 03:33:49 | Completed |
+|       16 |      16 |         16 |        2 | 2025-11-30 03:33:49 | Completed |
+|       17 |      17 |         17 |        1 | 2025-11-30 03:33:49 | Pending   |
+|       18 |      18 |         18 |        3 | 2025-11-30 03:33:49 | Shipped   |
+|       19 |      19 |         19 |        2 | 2025-11-30 03:33:49 | Completed |
+|       20 |      20 |         20 |        4 | 2025-11-30 03:33:49 | Pending   |
+|       21 |      21 |         21 |        1 | 2025-11-30 03:33:49 | Completed |
+|       22 |      22 |         22 |        3 | 2025-11-30 03:33:49 | Shipped   |
+|       23 |      23 |         23 |        2 | 2025-11-30 03:33:49 | Pending   |
+|       24 |      24 |         24 |        1 | 2025-11-30 03:33:49 | Completed |
+|       25 |      25 |         25 |        1 | 2025-11-30 03:33:49 | Shipped   |
+|       26 |      26 |         26 |        5 | 2025-11-30 03:33:49 | Completed |
+|       27 |      27 |         27 |        3 | 2025-11-30 03:33:49 | Pending   |
+|       28 |      28 |         28 |        2 | 2025-11-30 03:33:49 | Completed |
+|       29 |      29 |         29 |       10 | 2025-11-30 03:33:49 | Completed |
+|       30 |      30 |         30 |        1 | 2025-11-30 03:33:49 | Shipped   |
+|       31 |      31 |         31 |        4 | 2025-11-30 03:33:49 | Pending   |
+|       32 |      32 |         32 |        2 | 2025-11-30 03:33:49 | Completed |
+|       33 |      33 |         33 |        1 | 2025-11-30 03:33:49 | Completed |
+|       34 |      34 |         34 |        3 | 2025-11-30 03:33:49 | Pending   |
+|       35 |      35 |         35 |        2 | 2025-11-30 03:33:49 | Shipped   |
 +----------+---------+------------+----------+---------------------+-----------+
 
 Penggunaan Query (where) dan (between):
 
 -- Query 1: Pilih pesanan dengan quantity antara 1 hingga 3, dan status 'Completed'
-SELECT order_id, user_id, product_id, quantity, status 
-FROM Orders 
-WHERE quantity BETWEEN 1 AND 3 
-AND status = 'Completed';
+SELECT order_id, user_id, product_id, quantity, status
+    -> FROM Orders
+    -> WHERE quantity BETWEEN 1 AND 3
+    -> AND status = 'Completed';
 +----------+---------+------------+----------+-----------+
 | order_id | user_id | product_id | quantity | status    |
 +----------+---------+------------+----------+-----------+
@@ -188,5 +292,12 @@ AND status = 'Completed';
 |        6 |       6 |          6 |        1 | Completed |
 |       12 |      12 |         12 |        1 | Completed |
 |       15 |      15 |         15 |        1 | Completed |
+|       16 |      16 |         16 |        2 | Completed |
+|       19 |      19 |         19 |        2 | Completed |
+|       21 |      21 |         21 |        1 | Completed |
+|       24 |      24 |         24 |        1 | Completed |
+|       28 |      28 |         28 |        2 | Completed |
+|       32 |      32 |         32 |        2 | Completed |
+|       33 |      33 |         33 |        1 | Completed |
 +----------+---------+------------+----------+-----------+
 
